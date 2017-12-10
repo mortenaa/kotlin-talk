@@ -1,0 +1,15 @@
+target/
+.classpath
+.project
+.settings
+nbactions.xml
+nb-configuration.xml
+data/
+*~
+*.log
+*.iml
+.idea/
+tmlog.lck
+*.epoch
+*.versionsBackup
+.DS_Store

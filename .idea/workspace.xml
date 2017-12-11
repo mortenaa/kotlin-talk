@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02c9bffa-de4e-474e-9c2c-ba91068890c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PITCHME.md" afterPath="$PROJECT_DIR$/PITCHME.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Variables.kt" afterPath="$PROJECT_DIR$/src/Variables.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +19,11 @@
         <entry file="file://$PROJECT_DIR$/PITCHME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1188">
-                <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+              <first_editor relative-caret-position="1406">
+                <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                 <folding>
-                  <marker date="1513026194480" expanded="true" signature="239:271" ph="{...}" />
-                  <marker date="1513026194480" expanded="true" signature="302:336" ph="{...}" />
+                  <marker date="1513029106144" expanded="true" signature="238:270" ph="{...}" />
+                  <marker date="1513029106144" expanded="true" signature="301:335" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -54,8 +54,8 @@
       <file leaf-file-name="Variables.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Variables.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -104,9 +104,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Variables.kt" />
         <option value="$PROJECT_DIR$/src/Syntax.kt" />
         <option value="$PROJECT_DIR$/src/Functions.kt" />
+        <option value="$PROJECT_DIR$/src/Variables.kt" />
         <option value="$PROJECT_DIR$/PITCHME.md" />
       </list>
     </option>
@@ -318,12 +318,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512903322401</updated>
       <workItem from="1512903323979" duration="158000" />
-      <workItem from="1512903537782" duration="5751000" />
+      <workItem from="1512903537782" duration="8479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5909000" />
+    <option name="totallyTimeSpent" value="8637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-12" width="3840" height="2088" extended-state="6" />
@@ -417,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Variables.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -426,11 +426,11 @@
     <entry file="file://$PROJECT_DIR$/PITCHME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1188">
-            <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <first_editor relative-caret-position="1406">
+            <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
             <folding>
-              <marker date="1513026194480" expanded="true" signature="239:271" ph="{...}" />
-              <marker date="1513026194480" expanded="true" signature="302:336" ph="{...}" />
+              <marker date="1513029106144" expanded="true" signature="238:270" ph="{...}" />
+              <marker date="1513029106144" expanded="true" signature="301:335" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

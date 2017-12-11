@@ -6,4 +6,7 @@ fun main(args: Array<String>) {
     var d: Double = 3.14
     d = Math.PI
     println("a = $a, b = $b, c = $c")
+
+    var sum: Int = 0
+    sum += 10
 }

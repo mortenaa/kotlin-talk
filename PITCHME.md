@@ -11,22 +11,41 @@
 - Java
 - Scala
 - Pros/Cons
+- Multiplatform Java/JavaScript/Native
+- Interop
 
 ---
-### Eksemel
-```elm
-// ...
-if (x == null) {
-    println("Wrong number format in arg1: '$arg1'")
-    return
-}
-if (y == null) {
-    println("Wrong number format in arg2: '$arg2'")
-    return
+### Funksjoner
+```kotlin
+fun main(args: Array<String>) {
+    println("Hello, World!")
 }
 
-// x and y are automatically cast to non-nullable after null check
-println(x * y)
+fun max(a: Int, b: Int): Int {
+    return if (a > b) a else b
+}
+
+fun sum(a: Int, b: Int) = a + b
+```
+@[1-3]
+@[5-7]
+@[9]
+Note:
+Et minimalt Kotlin program. En funksjon i Kotlin trenger ikke 
+tilhøre en klasse. Retur type kan unnlates om den er Unit (void). 
+Type kommer etter parameter/argument i typesignaturen.
+Om funksjonen består av en enkelt expression kan den skrives med = uten klammer.
+Returtypen kan også unnlates om den kan utledes. Semicolons are optional.
+
+---
+### Variabler 
+```kotlin
+val a: Int = 1 
+val b = 2
+val c: Int  
+c = 3
+
+
 ```
 
 ---

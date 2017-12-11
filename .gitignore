@@ -13,3 +13,4 @@ tmlog.lck
 *.epoch
 *.versionsBackup
 .DS_Store
+out/

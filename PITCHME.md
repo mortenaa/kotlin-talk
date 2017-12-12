@@ -13,6 +13,14 @@
 - Pros/Cons
 - Multiplatform Java/JavaScript/Native
 - Interop
+Note:
+Kotlin seiler opp som en utfordrer til Java, og har plasert seg foran Groovy og Clojure, og tar innpå Scala.
+Kotlin har spesielt etablert seg som den største utfordreren til Java på Android platformen. Mye pga at java 
+for Android har hengt langt bak standard Java når det kommer til nye features for funksjonell programmering, har Kotlin etablert seg som de facto alternativet 
+til Java. Kotlin er nå også ofisielt støttet av google til Android programmering, på linje med Java.
+Men også på server utvikling blir Kotlin mer populært. Det er nå offisielt støttet av spring og spring boot, som alternativ til
+Java. Kotlin har hatt som mål å være et mer konsist, mindre verbost alternativ til Java, og egner seg spesielt
+til å utvikle DSL'er i.
 
 ---
 ## Funksjoner
@@ -90,5 +98,7 @@ Note: En Nullable og en NonNullable referanse er ulike type, og kan ikke uten vi
 if (obj is Person) {
     print(obj.name)
 }
+
+if (x is Person && x.age > 20) return
 ```
 Note: Implisit cast om condition er true

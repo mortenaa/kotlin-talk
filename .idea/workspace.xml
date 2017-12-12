@@ -18,13 +18,13 @@
         <entry file="file://$PROJECT_DIR$/PITCHME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="589">
-                <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+              <first_editor relative-caret-position="792">
+                <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
                 <folding>
-                  <marker date="1513100048696" expanded="true" signature="238:270" ph="{...}" />
-                  <marker date="1513100048696" expanded="true" signature="301:335" ph="{...}" />
-                  <marker date="1513100048696" expanded="true" signature="1477:1510" ph="{...}" />
-                  <marker date="1513100048696" expanded="true" signature="1518:1559" ph="{...}" />
+                  <marker date="1513113392954" expanded="true" signature="987:1019" ph="{...}" />
+                  <marker date="1513113392954" expanded="true" signature="1050:1084" ph="{...}" />
+                  <marker date="1513113392954" expanded="true" signature="2226:2259" ph="{...}" />
+                  <marker date="1513113392954" expanded="true" signature="2267:2308" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -367,12 +367,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512903322401</updated>
       <workItem from="1512903323979" duration="158000" />
-      <workItem from="1512903537782" duration="13174000" />
+      <workItem from="1512903537782" duration="14761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13332000" />
+    <option name="totallyTimeSpent" value="14919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-12" width="3840" height="2088" extended-state="6" />
@@ -380,7 +380,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294956" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14638157" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -502,13 +502,13 @@
     <entry file="file://$PROJECT_DIR$/PITCHME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="589">
-            <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <first_editor relative-caret-position="792">
+            <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             <folding>
-              <marker date="1513100048696" expanded="true" signature="238:270" ph="{...}" />
-              <marker date="1513100048696" expanded="true" signature="301:335" ph="{...}" />
-              <marker date="1513100048696" expanded="true" signature="1477:1510" ph="{...}" />
-              <marker date="1513100048696" expanded="true" signature="1518:1559" ph="{...}" />
+              <marker date="1513113392954" expanded="true" signature="987:1019" ph="{...}" />
+              <marker date="1513113392954" expanded="true" signature="1050:1084" ph="{...}" />
+              <marker date="1513113392954" expanded="true" signature="2226:2259" ph="{...}" />
+              <marker date="1513113392954" expanded="true" signature="2267:2308" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

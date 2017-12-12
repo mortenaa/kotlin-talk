@@ -27,9 +27,6 @@ fun max(a: Int, b: Int): Int {
 
 fun sum(a: Int, b: Int) = a + b
 ```
-@[1-3]
-@[5-7]
-@[9]
 Note:
 Et minimalt Kotlin program. En funksjon i Kotlin trenger ikke 
 tilhøre en klasse. Retur type kan unnlates om den er Unit (void). 
@@ -47,9 +44,6 @@ val b = 2
 val c: Int  
 c = 3
 ```
-@[1]
-@[2]
-@[3-4]
 ### Mutable
 ```kotlin
 var sum: Int = 0 
@@ -66,6 +60,35 @@ Streng interpolation. Varaiabler eller expressions.
 ---
 ## Nullable
 ```kotlin
+val x: String = null // Does not compile
 
+val x: String? = null // Ok
+
+val y: String? = if (Random().nextBoolean()) "foo" else null
+
+println(y.length) // Unsafe, does not compile
+
+println(y!!.length) // Unsafe, compiles
+
+if (y != null) {
+    println(y.length) // safe
+}
+
+y.let {               // safe
+    println(it)
+}
+
+val l = if (y != null) y.length else -1
+
+val m = y?.length ?: -1
 ```
+Note: En Nullable og en NonNullable referanse er ulike type, og kan ikke uten videre blandes.
 
+---
+## Smart Cast
+```
+if (obj is Person) {
+    print(obj.name)
+}
+```
+Note: Implisit cast om condition er true

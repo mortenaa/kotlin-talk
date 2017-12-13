@@ -8,7 +8,7 @@ data/
 *~
 *.log
 *.iml
-.idea/
+.idea
 tmlog.lck
 *.epoch
 *.versionsBackup

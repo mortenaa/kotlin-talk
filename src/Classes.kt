@@ -31,4 +31,8 @@ fun main(args: Array<String>) {
     println("${user.userName}")
     val book = Book("The Lord of The Rings", "J.R.R. Tolkien", sortedUnder = "Tolkien")
     println(book)
+
+    val p1 = User("dave", "**")
+    val (name, password) = p1
+    println(name)
 }

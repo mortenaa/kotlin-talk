@@ -44,7 +44,9 @@ Type kommer etter parameter/argument i typesignaturen.
 Legg merke til at 'if' er en expression.
 Om funksjonen består av en enkelt expression kan den skrives med = uten klammer.
 Returtypen kan også unnlates om den kan utledes. Semicolons are optional.
-
+Default parameter
+Named parameters
+Extension functions
 
 
 ---
@@ -116,5 +118,38 @@ Note: Implisit cast om condition er true
 ---
 ## Classes
 ```
+class Event {
+}
+
+class Message
+
+class Student {
+
+    private val name: String
+
+    constructor(name: String) {
+        this.name = name
+    }
+}
+
+class Person(val firstName: String) {
+}
+
+class Person2(val firstName: String, val lastName: String, var age: Int) {
+}
+
+data class User(val userName: String, val password: String)
+
+data class Book(val title: String, val author: String, val year: Int = -1, val sortedUnder: String = author)
 ```
 Note: Klasser er final by default (bruke open keyword)
+Flere tema; getters/setters, companion objects, delegation, ++
+
+
+
+---
+## Lambdas
+```
+
+```
+Note:

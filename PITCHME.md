@@ -22,6 +22,8 @@ Men også på server utvikling blir Kotlin mer populært. Det er nå offisielt s
 Java. Kotlin har hatt som mål å være et mer konsist, mindre verbost alternativ til Java, og egner seg spesielt
 til å utvikle DSL'er i.
 
+
+
 ---
 ## Funksjoner
 ```kotlin
@@ -42,6 +44,8 @@ Type kommer etter parameter/argument i typesignaturen.
 Legg merke til at 'if' er en expression.
 Om funksjonen består av en enkelt expression kan den skrives med = uten klammer.
 Returtypen kan også unnlates om den kan utledes. Semicolons are optional.
+
+
 
 ---
 ## Variabler
@@ -64,6 +68,8 @@ Note:
 Variabler kan også forekomme på top level (i en fil), ikke bare i klasser og funksjoner.
 Et eget nøkkelord 'var' definerer in mutable variabel.
 Streng interpolation. Varaiabler eller expressions.
+
+
 
 ---
 ## Nullable
@@ -92,6 +98,8 @@ val m = y?.length ?: -1
 ```
 Note: En Nullable og en NonNullable referanse er ulike type, og kan ikke uten videre blandes.
 
+
+
 ---
 ## Smart Cast
 ```
@@ -102,3 +110,11 @@ if (obj is Person) {
 if (x is Person && x.age > 20) return
 ```
 Note: Implisit cast om condition er true
+
+
+
+---
+## Classes
+```
+```
+Note: Klasser er final by default (bruke open keyword)

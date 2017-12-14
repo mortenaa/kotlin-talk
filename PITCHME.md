@@ -250,3 +250,35 @@ val sum1 = things
 Note:
 De vanlige høyere ordens funksjonene fra funksjonelle språk er tilgjengelige. Vi kan kjede funksjonene slik som
 med java 8 streams. men type inferens og et mye større utvalg funksjoner gjør det mye kraftigere i Kotlin
+
+
+
+---
+## DSL
+```kotlin
+        html {
+            head {
+                title { +"The Title" }
+            }
+            body {
+                h1 { +"Some Header" }
+                p { +"Paragraph" }
+
+                p {
+                    +"This is some"
+                    b { +"mixed" }
+                    +"text. For more see the"
+                }
+                p { +"some text" }
+
+                p {
+                    for (arg in args)
+                        +arg
+                }
+            }
+        }
+```
+Note: 
+Kotlin egner seg spesielt til å utvikle DSL'er.
+Om en lambda er siste argument til en funksjon, kan den angis utenfor parantesene med de andre argumentene.
+Og om det er kun en lambda, uten paranteser helt.

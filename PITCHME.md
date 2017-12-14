@@ -198,7 +198,8 @@ Ofte defineres konstruktøren innline.
 ```kotlin
 data class User(val userName: String, val password: String)
 
-data class Book(val title: String, val author: String, val year: Int = -1, val sortedUnder: String = author)
+data class Book(val title: String, val author: String, 
+                val year: Int = -1, val sortedUnder: String = author)
 
 val user1 = User("Morten", "******")
 val user2 = User(userName = "Morten", password = "******")

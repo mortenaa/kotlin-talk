@@ -15,9 +15,21 @@ fun main(args: Array<String>) {
     }
 
     val list: List<Int> = listOf(10, 11, 12, 13, 14, 15)
-    val sum = list.filter { it -> it > 12 }.map { it -> it * 2 }.sum()
+    val sum = list.filter { i -> i > 12 }.map { i -> i * 2 }.sum()
     println(sum)
-    val max = list.filter { it -> it.rem(2) == 0 }.max()
+    val max = list.filter { it.rem(2) == 0 }.max()
     println(max)
-    println(list.groupBy { it -> it.rem(2) })
+    println(list.groupBy { v -> v.rem(2) })
+    println(list.partition { it.rem(2) == 0 })
+    val things = listOf("A", 42, 3.14, "Foo", Pair(1, 2))
+    val sum1 = things
+            .filter { it is Int }
+            .map { it as Int }
+            .map { it * 2 }
+            .sum()
+    println(sum1)
+
+    val sumIt = { x: Int, y: Int -> x + y }
+    sumIt(1, 2)
+
 }

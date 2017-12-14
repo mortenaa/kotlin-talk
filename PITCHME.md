@@ -119,7 +119,7 @@ kompileringsfeil. Du kan tvinge gjennom tilordningen med !! om du er sikker på 
 men dette vil da gi en nullpointer exception ved kjøretid.
 
 
-
+---
 ## Nullable
 ```kotlin
 val y: String? = if (Random().nextBoolean()) "foo" else null
@@ -146,7 +146,7 @@ verdi med ?: operatoren. (Uten den ville m her fått verdien null, og den utlede
 
 ---
 ## Smart Cast
-```
+```kotlin
 if (obj is Person) {
     print(obj.name)
 }
@@ -173,7 +173,7 @@ side av uttrykket.
 
 ---
 ## Classes
-```
+```kotlin
 class Event { }
 
 class Message
@@ -197,7 +197,7 @@ Ofte defineres konstruktøren innlin.
 
 ---
 ## Data Classes
-```
+```kotlin
 data class User(val userName: String, val password: String)
 
 data class Book(val title: String, val author: String, val year: Int = -1, val sortedUnder: String = author)
@@ -209,7 +209,7 @@ Flere tema; getters/setters, companion objects, delegation, ++
 
 ---
 ## Lambdas
-```
+```kotlin
 
 ```
 Note:

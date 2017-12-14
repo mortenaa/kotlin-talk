@@ -199,7 +199,8 @@ Ofte defineres konstruktøren innline.
 data class User(val userName: String, val password: String)
 
 data class Book(val title: String, val author: String, 
-                val year: Int = -1, val sortedUnder: String = author)
+                val year: Int = -1, 
+                val sortedUnder: String = author)
 
 val user1 = User("Morten", "******")
 val user2 = User(userName = "Morten", password = "******")
@@ -225,6 +226,10 @@ doIt(20, { it * 8 })
 val sumIt = { x: Int, y: Int -> x + y }
 ```
 Note:
+Lambda eller anonyme funksjoner deklareres med klammer og parameter inni klammene. Type kan som vanlig utelates
+der de kan utledes automatisk. om lambdaen kun tar et argument, kan den innebygde variabelen 'it' benyttes isteden.
+Du kan til og med tilordne en lambda til en variabel, og dermed gi den et navn, slik at den kan kalles som en hvilken som 
+helst funksjon.
 
 
 
@@ -243,3 +248,5 @@ val sum1 = things
         .sum()
 ```
 Note:
+De vanlige høyere ordens funksjonene fra funksjonelle språk er tilgjengelige. Vi kan kjede funksjonene slik som
+med java 8 streams. men type inferens og et mye større utvalg funksjoner gjør det mye kraftigere i Kotlin

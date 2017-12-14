@@ -25,6 +25,18 @@ til å utvikle DSL'er i.
 
 
 ---
+## Historie
+- Statisk typet programmeringsspråk
+  - JVM
+  - JavaScript
+  - Native (LLVM)
+- Multi Paradigm
+- JetBrains 2011
+
+ 
+
+
+---
 ## Funksjoner
 ```kotlin
 fun main(args: Array<String>) {

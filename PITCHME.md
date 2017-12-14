@@ -175,7 +175,6 @@ side av uttrykket.
 ## Classes
 ```kotlin
 class Event { }
-
 class Message
 
 class Student {
@@ -188,12 +187,11 @@ class Student {
 }
 
 class Person(val firstName: String) 
-
 class Person2(val firstName: String, val lastName: String, var age: Int)
 ```
 Note:
-en minimal klasse trenger ikke en gang en blokk. klasser kan defineres med feld og metoder som i Java.
-Ofte defineres konstruktøren innlin.
+en minimal klasse trenger ikke en gang en blokk. klasser kan defineres med felt og metoder som i Java.
+Ofte defineres konstruktøren innline.
 
 ---
 ## Data Classes
@@ -201,15 +199,46 @@ Ofte defineres konstruktøren innlin.
 data class User(val userName: String, val password: String)
 
 data class Book(val title: String, val author: String, val year: Int = -1, val sortedUnder: String = author)
+
+val user1 = User("Morten", "******")
+val user2 = User(userName = "Morten", password = "******")
 ```
-Note: Klasser er final by default (bruke open keyword)
+Note: 
+Parameter kan angis etter rekkefølge som i Java, men også navngitte parameter støttes. Det er spesielt nyttig kombinert
+med optional parameter (som har default verdi)
+Klasser er final by default (bruke open keyword)
 Flere tema; getters/setters, companion objects, delegation, ++
 
 
 
 ---
-## Lambdas
+## Lambda
 ```kotlin
+fun doIt(value: Int, body: (Int) -> Int): Int {
+    return body(value)
+}
 
+doIt(10, { v -> 16 * v})
+doIt(20, { it * 8 })
+
+val sumIt = { x: Int, y: Int -> x + y }
+```
+Note:
+
+
+
+---
+## Lambda
+```kotlin
+val list: List<Int> = listOf(10, 11, 12, 13, 14, 15)
+val sum = list.filter { i -> i > 12 }.map { i -> i * 2 }.sum()
+val max = list.filter { it.rem(2) == 0 }.max()
+
+val things = listOf("A", 42, 3.14, "Foo", Pair(1, 2))
+val sum1 = things
+        .filter { it is Int }
+        .map { it as Int }
+        .map { it * 2 }
+        .sum()
 ```
 Note:

@@ -111,7 +111,8 @@ println(y.length) // Unsafe, does not compile
 
 println(y!!.length) // Unsafe, compiles
 ```
-Note: En av tingene jeg liker best i Kotlin er hvordan den håndterer null verdier.
+Note:
+En av tingene jeg liker best i Kotlin er hvordan den håndterer null verdier.
 En Nullable og en NonNullable referanse er ulike type, og kan ikke uten videre blandes.
 Kompilatoren kan derfor sjekke om du forsøker å tilordne en nullable type til en non nullable, og gi
 kompileringsfeil. Du kan tvinge gjennom tilordningen med !! om du er sikker på at den ikke er null,

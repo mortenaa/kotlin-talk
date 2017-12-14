@@ -187,7 +187,7 @@ class Student {
 }
 
 class Person(val firstName: String) 
-class Person2(val firstName: String, val lastName: String, var age: Int)
+class Thing(val name: String, var age: Int, val type: Type)
 ```
 Note:
 en minimal klasse trenger ikke en gang en blokk. klasser kan defineres med felt og metoder som i Java.

@@ -9,4 +9,5 @@ fun main(args: Array<String>) {
 
     var sum: Int = 0
     sum += 10
+    java.lang.Math.abs(sum)
 }

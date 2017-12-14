@@ -27,4 +27,16 @@ fun main(args: Array<String>) {
     val m = y?.length ?: -1
 
     println(l + m)
+
+    println(doSomething(42))
+}
+
+fun doSomething(something: Any): Int {
+    val x = when (something) {
+        is String -> something.length
+        is Int -> something
+        is List<*> -> something.size
+        else -> -1
+    }
+    return x
 }

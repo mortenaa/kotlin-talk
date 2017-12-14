@@ -30,7 +30,10 @@ Note:
 Java er et statisk typet språk, og det egner seg like bra til funksjonell programmering som objekt orientert programmering.
 Utviklet av JetBrains som et alternativ til Java på Jvm platformen, men kompilerer nå også til JavaScript, og native (via LLVM)
 Språket er med hensikt mindre verbost en Java, og har ikke overraskende utmerket IDE støtte i IntelliJ 
- 
+Selv har jeg hovedsaklig brukt Kotlin til hobby prosjekter. Men har også klart å snike det inn til enkelte oppgaver på jobben.
+Kotlin har en stor fordel ved at java interopp er utmerket, og at det fungerer problemfritt inn i eksisterende bygge og deployment 
+pipelines. 
+
 
 
 ---
@@ -67,6 +70,7 @@ Named parameters
 Extension functions
 
 
+
 ---
 ## Variabler
 #### Immutable
@@ -98,12 +102,26 @@ expression med $ og klammer rundt utrykket.
 ## Nullable
 ```kotlin
 val x: String = null // Does not compile
+
 val x: String? = null // Ok
 
 val y: String? = if (Random().nextBoolean()) "foo" else null
 
 println(y.length) // Unsafe, does not compile
+
 println(y!!.length) // Unsafe, compiles
+```
+Note: En av tingene jeg liker best i Kotlin er hvordan den håndterer null verdier.
+En Nullable og en NonNullable referanse er ulike type, og kan ikke uten videre blandes.
+Kompilatoren kan derfor sjekke om du forsøker å tilordne en nullable type til en non nullable, og gi
+kompileringsfeil. Du kan tvinge gjennom tilordningen med !! om du er sikker på at den ikke er null,
+men dette vil da gi en nullpointer exception ved kjøretid.
+
+
+
+## Nullable
+```kotlin
+val y: String? = if (Random().nextBoolean()) "foo" else null
 
 if (y != null) {
     println(y.length) // safe
@@ -117,15 +135,12 @@ val l = if (y != null) y.length else -1
 
 val m = y?.length ?: -1
 ```
-Note: En av tingene jeg liker best i Kotlin er hvordan den håndterer null verdier.
-En Nullable og en NonNullable referanse er ulike type, og kan ikke uten videre blandes.
-Kompilatoren kan derfor sjekke om du forsøker å tilordne en nullable type til en non nullable, og gi
-kompileringsfeil. Du kan tvinge gjennom tilordningen med !! om du er sikker på at den ikke er null,
-men dette vil da gi en nullpointer exception ved kjøretid.
+Note:
 Etter en null sjekk kan kompilatoren garantere at verdien ikke er null, og dermed tillate kall som ellers
 vill gitt nullpointer. Selv i en branch av en if expression kan kompilatoren sjekke dette.
 ?. operatoren gir en trygg måte å kalle metode på et potensielt null objekt, og eventuelt gi en alternativ
 verdi med ?: operatoren. (Uten den ville m her fått verdien null, og den utledete typen til m ville vært Int? i steden for Int)
+
 
 
 ---
@@ -158,8 +173,7 @@ side av uttrykket.
 ---
 ## Classes
 ```
-class Event {
-}
+class Event { }
 
 class Message
 
@@ -172,12 +186,17 @@ class Student {
     }
 }
 
-class Person(val firstName: String) {
-}
+class Person(val firstName: String) 
 
-class Person2(val firstName: String, val lastName: String, var age: Int) {
-}
+class Person2(val firstName: String, val lastName: String, var age: Int)
+```
+Note:
+en minimal klasse trenger ikke en gang en blokk. klasser kan defineres med feld og metoder som i Java.
+Ofte defineres konstruktøren innlin.
 
+---
+## Data Classes
+```
 data class User(val userName: String, val password: String)
 
 data class Book(val title: String, val author: String, val year: Int = -1, val sortedUnder: String = author)
